@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+*{
+    font-family: 'Dela Gothic One', sans-serif;
+
+}
+body{
+    background-color: #3d4562;
+    margin:0 auto;
+}
+.vnes{
+    width:100%;
+    height: 60px;
+    display: flex;
+}
+.vnes input{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    font-size:25px;
+    background-color: #191f31;
+    color:white;
+    
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    margin-bottom: 30px;
+}
+.theme_numbers{
+    display: flex;
+    justify-content: space-between;
+}
+.title{
+    font-size:26px;
+}
+.size{
+    width:90%;
+    margin:0 auto;
+}
+.main{
+    width:100%;
+    margin-top:60px;
+    
+}
+.main_wrapper{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 15px;
+background-color: #262d42;
+border-radius: 10px;
+}
+.buttons{
+    width:70px;
+    height: 70px;
+    margin-bottom:10px;
+    text-align: center;
+}
+.buttons button{
+    width: 100%;
+    height: 70px;
+    font-size:22px;
+    background-color: #e8e3db;
+    color:#454850;
+    border-radius:10px;
+    box-shadow: 1px 2px 0px;
+}
+#Rst{
+    width:150px;
+
+}
+#Rst button{
+    background-color: #667295;
+    width:100%;
+}
+#equal{
+    width:150px;
+}
+#equal button{
+    width:100%;
+    background-color: #c04a3a;
+}
+#Del button{
+    background-color: #667295;
+}
+.theme_number{
+    width:30px;
+    background-color: green;
+    text-align: center;
+    border-radius: 10px;
+}
+.prva_tema{
+    background-color: pink;
+}
+.set_default{
+    text-align: center;
+    margin-top:50px;
+    text-decoration: underline;
+    font-size:22px;
+}
