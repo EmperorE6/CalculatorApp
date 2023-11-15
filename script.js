@@ -3,7 +3,7 @@ let inputot=document.getElementById("vnesot");
 let tema=document.getElementsByClassName("theme_number");
 let defTema=document.getElementById("default");
 
-tema[0].addEventListener("mouseover",function(){
+tema[0].addEventListener("click",function(){
     document.body.style.backgroundColor="#fabede";
 });
 tema[1].addEventListener("click",function(){
