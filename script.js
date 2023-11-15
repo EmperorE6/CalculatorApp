@@ -3,18 +3,18 @@ let inputot=document.getElementById("vnesot");
 let tema=document.getElementsByClassName("theme_number");
 let defTema=document.getElementById("default");
 
-tema[0].addEventListener("click",function(){
-    document.body.style.backgroundColor="pink";
-})
+tema[0].addEventListener("mouseover",function(){
+    document.body.style.backgroundColor="#fabede";
+});
 tema[1].addEventListener("click",function(){
-    document.body.style.backgroundColor="green";
-})
+    document.body.style.backgroundColor="#a7ebb9";
+});
 tema[2].addEventListener("click",function(){
-    document.body.style.backgroundColor="yellow";
-})
+    document.body.style.backgroundColor="#f0f558";
+});
 defTema.addEventListener("click",function(){
     document.body.style.backgroundColor="#3d4562";
-})
+});
 
 let prvbroj;
 let vtorbroj;

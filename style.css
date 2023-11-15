@@ -86,7 +86,8 @@ border-radius: 10px;
 }
 .theme_number{
     width:30px;
-    background-color: green;
+    color:white;
+    background-color: black;
     text-align: center;
     border-radius: 10px;
 }
