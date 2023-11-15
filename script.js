@@ -2,18 +2,41 @@ let kopceButton=document.getElementsByTagName("button");
 let inputot=document.getElementById("vnesot");
 let tema=document.getElementsByClassName("theme_number");
 let defTema=document.getElementById("default");
+let mainWrapper=document.getElementById("main_wrp");
+let equal=document.getElementById("eq");
+let reset=document.getElementById("rs");
+let del = document.getElementById("dl");
+let mrrr;
+var me=2;
 
 tema[0].addEventListener("click",function(){
     document.body.style.backgroundColor="#fabede";
+    mainWrapper.style.backgroundColor="#347870";
+    equal.style.backgroundColor="#b266de";
+    reset.style.backgroundColor="#fabede";
+    del.style.backgroundColor="#fabede";
 });
 tema[1].addEventListener("click",function(){
     document.body.style.backgroundColor="#a7ebb9";
+    mainWrapper.style.backgroundColor="#eddc95";
+    equal.style.backgroundColor="#a7ebb9";
+    reset.style.backgroundColor="#a7ebb9";
+    del.style.backgroundColor="#a7ebb9";
 });
 tema[2].addEventListener("click",function(){
     document.body.style.backgroundColor="#f0f558";
+    mainWrapper.style.backgroundColor="#292824";
+    equal.style.backgroundColor="#7c469c";
+    reset.style.backgroundColor="#f0f558";
+    del.style.backgroundColor="#f0f558";
+    
 });
 defTema.addEventListener("click",function(){
     document.body.style.backgroundColor="#3d4562";
+    mainWrapper.style.backgroundColor="#262d42";
+    equal.style.backgroundColor="#b25241";
+    reset.style.backgroundColor="#687292";
+    del.style.backgroundColor="#687292";
 });
 
 let prvbroj;
@@ -50,7 +73,9 @@ switch(e.target){
         inputot.value+=kopceButton[6].innerHTML;
         break;
     case kopceButton[7]:
-        inputot.value+=kopceButton[7].innerHTML;
+        if(inputot.value.slice(-1) !== "-" && inputot.value.slice(-1) !== "+" && inputot.value.slice(-1) !== "/" && inputot.value.slice(-1) !== "x" ){
+            inputot.value+="+";
+        }
         break;
     case kopceButton[8]:
         inputot.value+=kopceButton[8].innerHTML;
@@ -62,7 +87,9 @@ switch(e.target){
         inputot.value+=kopceButton[10].innerHTML;
         break;
     case kopceButton[11]:
-        inputot.value+=kopceButton[11].innerHTML;
+        if(inputot.value.slice(-1) !== "-" && inputot.value.slice(-1) !== "+" && inputot.value.slice(-1) !== "/" && inputot.value.slice(-1) !== "x"){
+            inputot.value+="-";
+        }
         break;
     case kopceButton[12]:
         inputot.value+=kopceButton[12].innerHTML;
@@ -71,10 +98,14 @@ switch(e.target){
         inputot.value+=kopceButton[13].innerHTML;
         break;
     case kopceButton[14]:
-        inputot.value+=kopceButton[14].innerHTML;
+        if(inputot.value.slice(-1) !== "-" && inputot.value.slice(-1) !== "+" && inputot.value.slice(-1) !== "/" && inputot.value.slice(-1) !== "x"){
+            inputot.value+="/";
+        }
         break;
     case kopceButton[15]:
-        inputot.value+=kopceButton[15].innerHTML;
+        if(inputot.value.slice(-1) !== "-" && inputot.value.slice(-1) !== "+" && inputot.value.slice(-1) !== "/" && inputot.value.slice(-1) !== "x"){
+            inputot.value+="x";
+        }
         break;
     case kopceButton[16]:
         inputot.value="";
@@ -124,7 +155,6 @@ switch(e.target){
         break;
 }
 if(inputot.value == kolicnik ||inputot.value== razlika || inputot.value== sum ||inputot.value== proizvod){
-kopceButton[3].disabled=true;
+    kopceButton[3].disabled=true;
 }
 })
-
